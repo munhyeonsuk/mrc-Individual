@@ -2,12 +2,16 @@ body li {
   list-style: none;
 }
 
+h1 {
+  max-width: 162px;
+  width: 33.333vw;
+}
+h1 img {
+  width: 100%;
+}
+
 #hd {
   background-color: white !important;
-}
-#hd h1,
-#hd .utill {
-  width: 0;
 }
 #hd .gnb {
   position: relative;
@@ -82,10 +86,6 @@ body li {
   border-top: 0.5px solid black;
   font-weight: 500;
   font-size: 14px;
-}
-#hd .searchLi:hover .searchMenu {
-  height: 184px !important;
-  border: 1px solid #ccc;
 }
 
 #mainslider .mainSlidetext {
@@ -256,4 +256,39 @@ body li {
   top: 50%;
   right: 30px;
   transform: translateY(-150%) rotate(-90deg) translateX(-2px);
+}
+
+.allMenuBtn {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  #hd .allMenuBtn {
+    display: block;
+    order: 1;
+    border: none;
+    background: none;
+  }
+  #hd h1 {
+    order: 2;
+  }
+  #hd .gnb {
+    display: none !important;
+  }
+  #hd .utill {
+    display: block;
+    order: 3;
+  }
+  #hd .logIn {
+    display: none;
+  }
+  #ft h1 {
+    display: none;
+  }
+  #ft .fnbdes {
+    display: none;
+  }
+  #ft .verticalLine {
+    display: none;
+  }
 }
