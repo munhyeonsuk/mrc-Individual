@@ -249,6 +249,7 @@ h1{
                 float: right;
                 color: #379CEE;
               }
+              .ftsnsrw{display: none !important;}
         }
 
     }
@@ -340,7 +341,18 @@ h1{
 
 
 .allMenuBtn{ display: none ;}
+#ft{
+    h1{ display: block;}
+    .ftsns{
+        margin-left: auto;
+    }
+    .language{
+        margin-right: 0;
+    }
+}
+
 @media (max-width:1024px){
+  
     #hd{
         .allMenuBtn{ 
             display: block ; order:1;
@@ -359,9 +371,19 @@ h1{
     }
     #ft{
         h1{ display: none;}
-        .fnbdes{display: none;}
-        .verticalLine{display: none;}
-        
+        .ftsns{
+            margin-left: 0;
+        }
+        .verticalLine{display: none !important;}
+        .fnb{
+            margin-left: 1rem;
+            padding-top: 0;
+                
+             }
+        .fnbdes {display: none !important;}
+        .language{
+            margin-right: 1rem;
+        }      
     }   
 }
 
